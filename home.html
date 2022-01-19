@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET THE CITY</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+</style>
+    
+</head>
+ <body>
+     <header> <!-- the header is the main part of the screen when the user first opens the website containing the background image, the main font and the sizing of the image in the screen-->
+         
+            <div class="main"> <!-- contains both the logo and the navigation bar in order to arrange the spacing between them but also the placement of both of them on the screen-->
+                
+            <div class="logo"> 
+                <a target="_self" href="home.html" ><h1>MEET <br>THE <br>CITY</h1> <!-- using two br tagnames we changed the structure of the logo of the website-->
+                </a>
+            </div>
+        <div id="menuList"> <!-- the menuList contains the list that is visible in the right corner, used as a navigation bar-->
+            
+            <ul >
+                 <li class="active"><a href="home.html">Home</a></li> <!-- when the user is at a specific webpage, the name changing color indicates in which webpage the user is in-->
+                
+                 <li><a href="thessmap.html">Maps</a></li>
+                 <li><a href="places.html">Places</a></li>
+                 <li><a href="About.html">About</a></li>
+                
+                
+            </ul>
+                </div>
+                
+            </div> 
+         <div class="center"> <!-- this div controls the media in the center of the screen, the phrase below and the button for the main feature of the website-->
+             
+         <div class="motto"> <!-- this div contains the motto of our website and it's main purpose -->
+             
+            <h1>The best way to 
+                meet the city of Thessaloniki. <span></span></h1> <!-- the span is later used to create an animation that plays everytime the home page reloads-->
+             
+         </div>
+         <a href="quizsite.html"> <!-- this link directs you to the questionnaire-->
+             
+            <div class="question">
+                <button class="btn">GET STARTED</button>
+            </div>
+         </a>
+             
+         </div>
+     </header>
+     
+      <br><br>
+    
+     <br>
+     
+    <div class="funfacts"> <!-- this div contains some fun facts about the city of Thesaaloniki-->
+        
+     <p ><center>FUN FACTS ABOUT <span class="thessaloniki">THESSALONIKI</span></center></p>
+     </div>
+    <br>
+     <center><div class="container">
+         <div class="box1"><h1>#1</h1><h3>Thessaloniki is a city that holds 1.1 million citizens.</h3></div>
+         
+    <div class="box2"><h1>#2</h1><h3>There are 15 UNESCO Monuments all around the city.</h3></div>
+         
+         <div class="box3"><h1>#3</h1><h3>Thessaloniki is the largest university town in Greece.</h3></div>
+         </div></center>
+     
+     <br>
+     <br>
+     <div class="h1"><h1>MO<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">R</a>E</h1></div>
+     <p class="more">Welcome to our site.<br>We are a group of 5 students.We study Computer Science in City College University <br> of York and we have been asigned to make our first ever site. The idea for this project is to help the students of a university <br>in Thessaloniki that has students from every place in the world. We wanted to have a good time and give them our <br> opinion in which places fit for you and is possible to have a great time with just a small tour guide. </p>
+
+     <br>
+     <br>
+     
+     <a href="About.html"><div class="moreaboutus"><img src="person.png" width="100"><h4>MORE INFO ABOUT US</h4></div></a>
+     
+     <div class="line"><p>©2022 City College, All Rights Reserved.</p></div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+     </script>
+     <script>
+     $(window).scroll(function(){
+         $(".logo").css("opacity", 2.5 - $(window).scrollTop()/250);
+     });
+     </script>
+</body>       
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bindi Pireva -->
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        </style>
+        
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_thessmap.css">
+        
+    
+    </head>
+
+    <div class="main">
+            <div class="logo">
+                <a href="home.html"><h1>MEET <br>THE <br> CITY</h1></a>
+            </div>
+            <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li class="active"><a href="thessmap.html">Maps</a></li>
+                 <li><a href="places.html">Places</a></li>
+                 <li><a href="About.html">About </a></li>
+                 
+             
+            </ul>
+            </div>  
+    
+    
+    <body>
+
+    
+
+        
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="images/slide7.jpeg" style="width:100%;">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="images/slide4.jpg" style="width:100%;">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="images/umbrellas.jpg" style="width:100%;">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span  onclick="currentSlide(1)"></span> 
+  <span  onclick="currentSlide(2)"></span> 
+  <span  onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+         
+        <h1 style="font-size: 20px; color:white ;margin-left:50px; font-family:Montserrat;font-weight:100;border-style:solid;border-color:crimson;padding: 80px;margin-right:100px;margin-left: 100px;margin-top:30px;">Thessaloniki has many stories to tell, starting by the moment of its foundation in 316/315 B.C. Fortunate to have royal “blood”, since the new city was named after Thessaloniki, sister of Alexander the Great and daughter of Philip II, King of Macedonia.<br> <br>It was developed rapidly -due to its prominent geographical location- as one of the most important ports, and economical and commercial centers of Macedonia and the Balkan Peninsula as a whole, advantages maintained for the past 2300 years.<br>Today Thessaloniki is a modern European city, as always an important trade and transportation center connected to all the Balkan Countries, while it was nominated as the Cultural Capital of Europe in 1997.<br><br>
+        It is one of the largest student centers in South-Eastern Europe while many of its monuments are included on the UNESCO World Heritage List.
+        In 2004 during the Athens Olympics, the city hosted a number of athletic events while being one of the Greek Olympic Cities. Finally the city was selected in 2011 as the European Youth Capital of 2014.</h1> 
+        
+
+        <div  class="mapouter" style="display: flex;justify-content: center;margin: auto">
+        
+            <div class="gmap_canvas" style="margin-top: 30px"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Thessaloniki&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fridaynightfunkin.net/friday-night-funkin-mods-fnf-play-online/">FNF Online Games</a></div><style>.mapouter{position:relative;text-align:center;width:400px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:400px;height:400px;}.gmap_iframe {width:400px!important;height:400px!important;}</style>
+        </div>
+      
+        <br>
+        <br>
+        <br>
+        <div class="line2"><p>©2022 City College, All Rights Reserved.</p></div>
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+     </script>
+     <script>
+     $(window).scroll(function(){
+         $(".logo").css("opacity", 2.5 - $(window).scrollTop()/250);
+     });
+     </script>
+    </body>
+</html>

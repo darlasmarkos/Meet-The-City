@@ -1,0 +1,42 @@
+Note type : Function 
+    
+    Note 1 : 
+        
+         function check()
+            {
+    
+    alert("youve won a million dollars ");
+    
+            }
+            
+            we can think of a function like a public class ,like a small programm that executes whenever we call it by its name which is " check " , the " alert  " is a command that makes an alert window appear and say whatever message.
+        
+    
+    
+    
+    Note 2 :
+        
+        document.getElementById("after_submit").style.visibility="visible";
+        
+        The command " document.getElementById " is that so we can select something by its id which here what we select is " after_submit ", the we type the " style  " because we want to change its appearence , then we type " visibility " to change its visibility.
+        
+    
+    Note 3 :
+        
+        This command called " var question1 = document.quiz.question1.value; " is used so we can create a variable with " var " where it will search the whole document with " document " where it will search for the name " quiz "
+        where it will search more specificaly for " question1 " where it will finaly search for its " value "
+        
+        
+    Note 4 : 
+        
+        if(question1 =="Providence") 
+        {
+         correct++;
+        }
+        Here its simple , we just use the conditional if statement to check if the awnser the user inputed was in this case " Providence " where if its true the variable called " correct " will raise its value by 1.
+        
+    Note 5 :
+        
+        document.getElementById("number_correct").innerHTML="You got "+correct+ "correct. ";
+        
+        Here we go to the " number correct " which is a paragraph and use the command "  innerHTML " which will change whatever is inside the brackets ,in our case its empty os it will just type whatever we want without chaning anything. 

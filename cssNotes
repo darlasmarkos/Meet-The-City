@@ -1,0 +1,9 @@
+Notes type div
+    
+    Note 1 : 
+        
+        #after_submit
+            {
+                visibility: hidden;
+            } 
+        i use this to make the message at the bottum hidden so that i can later on make it appear after the user clicks at the button.

@@ -1,0 +1,142 @@
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+            #quiz {
+                  position: fixed;
+                  bottom: 0;
+                  background: rgba(0, 0, 0, 0.5);
+                  color: #f1f1f1;
+                  width: 100%;
+                  padding: 20px;
+                font-family: 'Montserrat', sans-serif;
+
+                    }
+            
+            body{
+                background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(um.jpg);
+                background-size:cover;}
+                
+.buttontable
+    {
+        text-align: center;
+    }
+#nested
+{
+    display: none;
+}
+.q h1{
+        position:absolute;
+        font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    margin:100px;
+    margin-top:200px;
+    margin-right:50px;
+    margin-left:250px;
+    font-size:20px;
+    transform: translate(-50%,-30%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:100;
+    color:crimson;
+    font-size:50px;
+    }
+ul{            /* Adjusting the placement of the navigation bar */
+    float:right;
+    list-style-type: none;
+    margin-top:35px;
+    margin-right:10px;
+    
+    
+}
+ul li{  /*Adjsusting the sizing of the font inside the list and it's display in order to be in the same line  */
+    display: inline-block;
+    font-size:1.2rem;
+    
+}
+
+ul li a{    /* Decorating the text inside the list and it's borders*/
+    text-decoration:none;
+    color:white;
+    padding:5px 20px;
+    border:1px solid #fff transparent;
+    transition: 0.6s ease;
+    text-shadow: -1px 1px 20px rgb(29, 28, 17);
+    font-family: 'Raleway', sans-serif;
+}
+
+ul li a:hover{ /* When hovered over the links inside the list the text changes color and a border appears indicating what the user is hoverig over*/
+    background-color: white;
+    color:black;
+}
+
+ul li.active a{ /*When the user is on a specific webpage the name of it inside the navigation changes color  */
+    background-color: white;
+    color:black;
+    
+}
+
+.logo{      /* "Decorating" the logo on the left and positioning it correctly*/
+    text-shadow: 1px 1px 10px rgb(29, 28, 17);
+    font-family: 'Raleway', sans-serif;
+    float:left;
+    margin-top:30px;
+    margin-left:20px
+    
+    
+}
+.logo a{
+    color:white;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.main{      /*Adjusting the position of the logo and navigation and putting it always at the front of the screen. */
+    max-width: 1300px;
+    margin: auto;
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    z-index:1;
+}
+@media only screen and (max-width:700px){ /* This  prompts the navigation bar to dissapear once the width reaches 700 pixels. When that is done the ul is converted to a box sized list with the adjustments we've done below making it match the webpage */
+    
+    ul{
+        width:25%;
+        background:linear-gradient(to right, #fb5283, #ff3527);
+        position:fixed;
+        border-radius:20px;
+        right:0;
+        z-index:2;
+    }
+    
+    ul li{
+        border-radius:20px;
+        display:block;
+        margin-top:10px;
+        margin-bottom:15px;
+    }
+    ul li a{
+        display:inline;
+        text-shadow:none;
+        color:pink;
+    }
+   
+    ul li a:hover{ /* When hovered over the links inside the list the text changes color and a border appears indicating what the user is hoverig over*/
+    background-color: white;
+    color:black;
+        border-radius: 10px;
+}
+  
+
+ul li.active a{ /*When the user is on a specific webpage the name of it inside the navigation changes color  */
+    background-color: white;
+    color:black;
+    border-radius:10px
+}
+ 
+
+    

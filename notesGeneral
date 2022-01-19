@@ -1,0 +1,32 @@
+Note type : Links
+
+    Note 1 :
+        The first link "  <link href="quiz.css" rel="stylesheet"> " is about opening the css file 
+        Note 2 :  
+        The second link is a bout using a custom font type Lato from the google website since its open source for everyone to use 
+    
+    
+Note type : Script
+    
+    Note 1 :
+        The " <script src="quiz.js"></script>  " is a command tellig us to use this javascript file the same as opening a css file  
+
+
+
+Note type : Form
+
+    Note 1 :
+        The " <form id="quiz"name="quiz"> " is a command-form that is used to collect user input
+        
+
+Note type : Input
+
+    Note 1 :
+        The " <input id="textbox" type="text" name="question1"> " is the command to make a little text box for the user to write in , the type = "text " is what defines if we want a radio-button or a textbox to write in in this example i use a textbox, the name is like the alt name that we can keep track of so dont mind that.
+        
+    Note 2 : 
+        Here we have <input type="radio" id="mc" name="question2" value="Hartford">HartFord<br> where this is the same command as the above with the oly difference being that we have a radio-button instead of a textbox.The value the name that we can reference on later and after the value is what appears. 
+    
+    Note 3 : 
+        At the " <input id="button" type="button" value="I'am finished ! " onclick="check();"> " the on click command is where we start using javascript , this is a function called check that " whatever check says to do now go do it "
+            

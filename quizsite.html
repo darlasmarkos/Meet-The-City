@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="quiz.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+           
+            }
+        </style>
+        <title>
+            Questionnaire
+        </title>
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <script src="quiz.js"></script>
+    </head>
+    <body>
+        <div class="main"> <!-- contains both the logo and the navigation bar in order to arrange the spacing between them but also the placement of both of them on the screen-->
+                
+            <div class="logo"> 
+                <a target="_self" href="home.html" ><h1>MEET <br>THE <br>CITY</h1> <!-- using two br tagnames we changed the structure of the logo of the website-->
+                </a>
+            </div>
+        <div id="menuList"> <!-- the menuList contains the list that is visible in the right corner, used as a navigation bar-->
+            
+            <ul >
+                 <li ><a href="home.html">Home</a></li> <!-- when the user is at a specific webpage, the name changing color indicates in which webpage the user is in-->
+                
+                 <li><a href="thessmap.html">Maps</a></li>
+                 <li><a href="places.html">Places</a></li>
+                 <li><a href="About.html">About</a></li>
+                
+                
+            </ul>
+                </div>
+                
+            </div> 
+    <div class="q"><h1>Questionnaire</h1></div>
+     <br>
+        <br>
+        <br>
+        <br>
+        <form id = "quiz" name = "quiz">
+
+
+<table style="width:100%">
+  <tr>
+      <th><p class = "questions">What time window are you avaible?</p></th>
+          <td>
+                <input type = "radio" id = "mc" name = "question1" value = "9:00-12:00">9:00 - 12:00<br>
+                <input type = "radio" id = "mc" name = "question1" value = "12:00-15:00">12:00 - 15:00<br>
+                <input type = "radio" id = "mc" name = "question1" value = "15:00-18:00">15:00 - 18:00<br>
+                <input type = "radio" id = "mc" name = "question1" value = "18:00-21:00">18:00 - 21:00<br>
+                <input type = "radio" id = "mc" name = "question1" value = "21:00 ++">21:00 ++<br>
+         </td>
+      
+      <th><p class = "questions">What are you looking for ?</p></th>
+            <td>
+                <input type = "radio" id = "cafe" name = "question2" value = "I'am looking for a Cafeteria"> I'am looking for a Cafeteria<br>
+                <input type = "radio" id = "eat" name = "question2" value = "i'am looking for a place to eat"> i'am looking for a place to eat<br>
+                <ul style="list-style-type:none;" id="nested">
+                    <li><input type = "radio" id = "mc" name = "question3" value = "Vegan friendly">Vegan friendly<br></li>
+                    <li><input type = "radio" id = "mc" name = "question3" value = "Street Food">Street Food<br></li>
+                    <li><input type = "radio" id = "mc" name = "question3" value = "Healthy food">Healthy food<br></li>
+                    <li><input type = "radio" id = "mc" name = "question3" value = "Meat">Meat<br></li>
+                </ul>
+                <input type = "radio" id = "drink" name = "question2" value = "i'am looking for a place to drink"> i'am looking for a place to drink<br>
+                <input type = "radio" id = "entertaiment" name = "question2" value = "i'am looking for entertainment"> i'am looking for entertainment<br>
+            </td>
+
+      <th><p class = "questions">What's the budget </p></th>
+          <td>
+                <input type = "radio" id = "mc" name = "question4" value = "Budget friendly">Budget friendly<br>
+                <input type = "radio" id = "mc" name = "question4" value = "Value for money">Value for money<br>
+                <input type = "radio" id = "mc" name = "question4" value = "Affordable">Affordable<br>
+                <input type = "radio" id = "mc" name = "question4" value = "Fancy">Fancy<br>
+          </td>
+ </tr>
+    </table>
+    <div class="buttontable">
+<input id = "button" type = "button" value = "Show results!" onclick = "myFunction() "></div>
+    
+            
+</form>
+        
+        
+    </body>
+    <script>
+       
+  alert("please allow this website to open popup windows for optimal experience");
+
+        document.getElementById('eat').onclick = function() 
+        {
+            document.getElementById("nested").style.display = "block";
+        }
+        document.getElementById('cafe').onclick = function() 
+        {
+            document.getElementById("nested").style.display = "none";
+        }
+        document.getElementById('drink').onclick = function() 
+        {
+            document.getElementById("nested").style.display = "none";
+        }
+        document.getElementById('entertaiment').onclick = function() 
+        {
+            document.getElementById("nested").style.display = "none";
+        }
+    </script>
+</html>
